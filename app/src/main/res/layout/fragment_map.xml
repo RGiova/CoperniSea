@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map.MapFragment">
+
+    <com.azure.android.maps.control.MapControl
+        android:id="@+id/map_control"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:azure_maps_language="it-IT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/azure_maps_marker_red" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/scale_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_height="100dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/orange"
+        android:src="@drawable/ic_baseline_calendar_month_24"
+        app:layout_constraintBottom_toTopOf="@id/scale_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/selected_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/date_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/no_date_selected"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/fab_calendar"
+        app:layout_constraintEnd_toStartOf="@+id/fab_calendar"
+        app:layout_constraintTop_toTopOf="@id/fab_calendar" />
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

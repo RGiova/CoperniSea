@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeOption"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/salOption"
+        android:title="@string/sal" />
+    <item
+        android:id="@+id/tempOption"
+        android:title="@string/temp" />
+    <item
+        android:id="@+id/sshOption"
+        android:title="@string/ssh" />
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/aboutDestination">
+    <fragment
+        android:id="@+id/aboutDestination"
+        android:name="com.example.copernisea.AboutFragment"
+        android:label="@string/about_fragment_label"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/salinityDestination"
+        android:name="com.example.copernisea.map.MapFragment"
+        android:label="@string/map_fragment_salinity_label"
+        tools:layout="@layout/fragment_map">
+        <argument
+            android:name="dataType"
+            android:defaultValue="salinity"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/temperatureDestination"
+        android:name="com.example.copernisea.map.MapFragment"
+        android:label="@string/map_fragment_temperature_label"
+        tools:layout="@layout/fragment_map">
+        <argument
+            android:name="dataType"
+            android:defaultValue="temperature"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surfaceDestination"
+        android:name="com.example.copernisea.map.MapFragment"
+        android:label="@string/map_fragment_surface_label"
+        tools:layout="@layout/fragment_map">
+        <argument
+            android:name="dataType"
+            android:defaultValue="surface"
+            app:argType="string" />
+    </fragment>
+</navigation>

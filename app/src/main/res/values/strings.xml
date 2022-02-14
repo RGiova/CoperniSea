@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">CoperniSea</string>
+
+    <string name="ssh">Surface</string>
+    <string name="sal">Salinity</string>
+    <string name="temp">Temperature</string>
+    <string name="home">Home</string>
+
+    <string name="about_fragment_label">Home</string>
+    <string name="map_fragment_surface_label">Surface Data</string>
+    <string name="map_fragment_temperature_label">Temperature Data</string>
+    <string name="map_fragment_salinity_label">Salinity Data</string>
+
+    <string name="about_title">CoperniSea</string>
+    <string name="about_credits1">I dati mostrati in questa applicazione provengono dalle rilevazioni del progetto Copernicus.</string>
+    <string name="about_credits2">In particolare vengono visualizzate le informazioni relative al seguente prodotto <i>Copernicus Marine Environment Monitoring Service (CMEMS)</i></string>
+    <string name="doi_link"><b>DOI:</b>\n<a href="https://doi.org/10.25423/CMCC/MEDSEA_ANALYSISFORECAST_PHY_006_013_EAS6">https://doi.org/10.25423/CMCC/MEDSEA_ANALYSISFORECAST_PHY_006_013_EAS6</a> </string>
+    <string name="no_date_selected">No date selected</string>
+    <string name="select_date_title">Select a date</string>
+    <string name="folder_not_found">Folder Not Found!</string>
+</resources>
